@@ -1,0 +1,17 @@
+<h1>Your inventory app</h1>
+
+<h2>Create a new product:</h2>
+
+<%= form_with model: @product do |p| %>
+  <%= p.label :name  %>
+  <%= p.text_field :name  %>
+  <%= p.label :amount  %>
+  <%= p.text_field :amount  %>
+  <%= p.label :details  %>
+  <%= p.text_field :details  %>
+  <%= p.label :supplier %>
+  <%= p.text_field :supplier %>
+  <%= p.label :price  %>
+  <%= p.text_field :price  %>
+  <%= p.submit %>
+<% end %>

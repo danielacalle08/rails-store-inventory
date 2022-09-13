@@ -1,0 +1,7 @@
+<h1>Your inventory app</h1>
+<% @inventory.each do |article| %>
+<%= link_to article.name, inventories_path(article) %> ||
+<%= article.amount %><br/>
+<% end %>
+
+<%= link_to 'Add product', new_inventory_path %>
